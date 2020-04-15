@@ -1,0 +1,3 @@
+/home/vladimir/CLionProjects/cis_admission/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/vladimir/CLionProjects/cis_admission/cmake-build-debug/CMakeFiles/cis_admission.dir
+/home/vladimir/CLionProjects/cis_admission/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/cis_admission.dir/main.cpp.o CMakeFiles/cis_admission.dir/server.cpp.o CMakeFiles/cis_admission.dir/client.cpp.o CMakeFiles/cis_admission.dir/constants.cpp.o  -o cis_admission 
