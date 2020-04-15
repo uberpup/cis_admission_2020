@@ -22,7 +22,7 @@ public:
 private:
     static void* ClientHandler(void* arg);    // void* is required return value type for pthreads
 
-    void SignalHandler(int sig_id) {
+    static void SignalHandler(int sig_id) {
         if (sig_id == SIGTERM) {
             signal_caught = 1;
         } else if (sig_id == SIGINT) {
@@ -31,7 +31,9 @@ private:
     }
 
     int sock_fd_;
-    sig_atomic_t signal_caught = 0;
+    static sig_atomic_t signal_caught;
 };
+
+sig_atomic_t Server::signal_caught = 0;
 
 #endif //CIS_ADMISSION_SERVER_H

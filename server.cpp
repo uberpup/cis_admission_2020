@@ -1,6 +1,12 @@
 #include "server.h"
 
 Server::Server(const char* ip_string, short port_num) {
+    struct sigaction sig_act = {.sa_handler = SignalHandler};   // requires static function
+
+    sigaction(SIGINT, &sig_act, NULL);
+    sigaction(SIGTERM, &sig_act, NULL);
+
+
     sock_fd_ = socket(AF_INET, SOCK_STREAM, 0);
 
     if (sock_fd_ == -1) {
