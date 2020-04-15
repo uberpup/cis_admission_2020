@@ -6,10 +6,11 @@
 
 int main() {
     Server server("127.0.0.1", 2222);
-
+    // fork + server Operate
 
     Client client_first("127.0.0.1", 2221);
     Client client_second("127.0.0.1", 2220);
+    // fork for each client
 
     SyscallData data_first = {};
     SyscallData data_second = {};
